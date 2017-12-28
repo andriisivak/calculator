@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calcSimple">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calc</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="calcController" ng-keydown="calcByKeys()">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h3>simple calc</h3>
+                <input class="calc_input" type="text" ng-model="inputString"
+                    autofocus>
+                <input class="calc_output" type="text" ng-model="outputString"
+                    placeholder="=" ng-disabled="true">
+                <div class="calc">
+                    <button class="back" ng-click="backspace()">
+                        back
+                    </button>
+                    <button class="cancel" ng-click="canelCalc()">
+                        c
+                    </button>
+                    <button ng-click="getValue()"
+                        ng-repeat="button in buttons" ng-model="addColor"
+                        ng-class="{'calc_button': button != '=',
+                            'calc_button_equal': button == '='}">
+                        {{button}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

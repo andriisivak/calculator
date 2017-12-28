@@ -1,0 +1,97 @@
+* {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #444;
+    background: #333;
+}
+
+h3 {
+    color: #999;
+    font-size: 14px;
+    margin-left: 60px;
+}
+
+input.calc_input {
+    display: block;
+    width: 200px;
+    height: 36px;
+    padding: 0 8px;
+    outline: none;
+    border-top: 8px solid #ddd;
+    border-left: 8px solid #ddd;
+    border-right: 8px solid #ddd;
+    border-bottom: none;
+    color: transparent;
+    text-shadow: 0 0 0 #bbb;
+    background: #444;
+    text-align: right;
+}
+
+input.calc_output {
+    display: block;
+    width: 200px;
+    height: 36px;
+    padding: 0 8px;
+    outline: none;
+    border-top: 8px solid #ddd;
+    border-left: 8px solid #ddd;
+    border-right: 8px solid #ddd;
+    border-bottom: none;
+    color: transparent;
+    text-shadow: 0 0 0 #ccc;
+    background: #444;
+    text-align: right;
+}
+
+.calc {
+    width: 200px;
+    height: 245px;
+    padding: 5px;
+    background: #ddd;
+}
+
+button.calc_button {
+    width: 45px;
+    height: 45px;
+    background: #ccc;
+    outline: none;
+    margin: 1px;
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+
+button.calc_button_equal {
+    width: 45px;
+    height: 45px;
+    background: #bcbaba;
+    outline: none;
+    margin: 1px;
+    border-radius: 5px;
+    color: #555;
+    transition: 0.5s all;
+}
+
+button.back {
+    width: 92px;
+    height: 45px;
+    background: #ccc;
+    outline: none;
+    text-transform: capitalize;
+    margin: 1px;
+    margin-right: 0;
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+
+button.cancel {
+    width: 92px;
+    height: 45px;
+    background: #bcbaba;
+    outline: none;
+    text-transform: uppercase;
+    margin: 1px;
+    margin-left: -2px;
+    border-radius: 5px;
+    color: #555;
+    transition: 0.5s all;
+}
